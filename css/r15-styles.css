@@ -1,0 +1,46 @@
+body{
+  background-image: url("../images/clothify.jpg");
+  background-position: 50% 50%;
+  background-repeat: repeat;
+  color: white;
+  font-family: Arial;
+  font-size: 1em;
+  margin-left: 2.5%;
+  margin-right: 12%;
+}
+h1 {
+  color: white;
+}
+h6 {
+  font-size: 0.85em;
+  color: silver;
+  text-align: center;  
+  margin-top: -1.2em;
+  margin-bottom: 0em;
+  font-weight: normal;
+  font-style: italic;
+}
+table{
+  margin: 0.5em 6em 1.5em 1.5em;
+}
+td.label {
+  font-weight: bold;
+  font-size: 1.1em;
+  text-align: right;
+  color: silver;
+  vertical-align: top;
+}
+img {
+  text-align: center;
+}
+div#title{
+  font-size: 1.3em;
+  margin-top: 0.25em;
+  margin-bottom: 0.25em;
+  font-weight: bold;
+  text-align: center;
+  font-family: Arial,sans-serif;
+}
+div.clickit div#title:hover {
+  color: #d3cb76;
+}
