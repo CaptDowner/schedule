@@ -1,7 +1,7 @@
 $LOAD_PATH << File.join(File.dirname(__FILE__))
 require 'date'
 require 'data/spiels'
-
+require 'pry'
 # beginning of html file
 prologue = 
   "<html>
@@ -37,14 +37,23 @@ File.open('rc2015.html', 'w') do |f2|
   f2.puts "<div id='day1' style=\"display: none;\">"
   # output details for Sunday talks
   0.upto(15) do |x|
-    f2.puts "<table>
+    if((SPIELS[x][:category]) == "Break")
+      f2.puts "<table>
                <tr><td class='label'>Duration:</td><td>#{SPIELS[x][:duration]}</td></tr>
                <tr><td class='label'>Location:</td><td>#{SPIELS[x][:location]}</td></tr>
                <tr><td class='label'>Category:</td><td>#{SPIELS[x][:category]}</td></tr>
-               <tr><td class='label'>Title:</td><td>#{SPIELS[x][:title]}</td><tr><td class='label'>Speaker:</td><td>#{SPIELS[x][:speaker]}</td></tr>
+               <tr><td class='label'>Title:</td><td>#{SPIELS[x][:title]}</td><tr>"
+    else
+      f2.puts "<table>
+               <tr><td class='label'>Duration:</td><td>#{SPIELS[x][:duration]}</td></tr>
+               <tr><td class='label'>Location:</td><td>#{SPIELS[x][:location]}</td></tr>
+               <tr><td class='label'>Category:</td><td>#{SPIELS[x][:category]}</td></tr>
+               <tr><td class='label'>Title:</td><td>#{SPIELS[x][:title]}</td><tr>
+               <td class='label'>Speaker:</td><td>#{SPIELS[x][:speaker]}</td></tr>
                <tr><td class='label'>Bio:</td><td>#{SPIELS[x][:bio]}</td></tr>
-               <tr><td class='label'>Details:</td><td>#{SPIELS[x][:details]}</td></tr>
-             </table>"
+               <tr><td class='label'>Details:</td><td>#{SPIELS[x][:details]}</td></tr>"
+    end
+    f2.puts    "</table>"
   end 
 
   f2.puts "</div> <!-- end day1 -->"
@@ -54,15 +63,23 @@ File.open('rc2015.html', 'w') do |f2|
   f2.puts "<div id='day2' style=\"display: none;\">"
   # output details for Monday talks
   16.upto(30) do |x|
-    f2.puts "<table>
+    if((SPIELS[x][:category]) == "Break")
+      f2.puts "<table>
                <tr><td class='label'>Duration:</td><td>#{SPIELS[x][:duration]}</td></tr>
                <tr><td class='label'>Location:</td><td>#{SPIELS[x][:location]}</td></tr>
                <tr><td class='label'>Category:</td><td>#{SPIELS[x][:category]}</td></tr>
-               <tr><td class='label'>Title:</td><td>#{SPIELS[x][:title]}</td></tr>
-               <tr><td class='label'>Speaker:</td><td>#{SPIELS[x][:speaker]}</td></tr>
+               <tr><td class='label'>Title:</td><td>#{SPIELS[x][:title]}</td><tr>"
+    else
+      f2.puts "<table>
+               <tr><td class='label'>Duration:</td><td>#{SPIELS[x][:duration]}</td></tr>
+               <tr><td class='label'>Location:</td><td>#{SPIELS[x][:location]}</td></tr>
+               <tr><td class='label'>Category:</td><td>#{SPIELS[x][:category]}</td></tr>
+               <tr><td class='label'>Title:</td><td>#{SPIELS[x][:title]}</td><tr>
+               <td class='label'>Speaker:</td><td>#{SPIELS[x][:speaker]}</td></tr>
                <tr><td class='label'>Bio:</td><td>#{SPIELS[x][:bio]}</td></tr>
-               <tr><td class='label'>Details:</td><td>#{SPIELS[x][:details]}</td></tr>
-             </table>"
+               <tr><td class='label'>Details:</td><td>#{SPIELS[x][:details]}</td></tr>"
+    end
+    f2.puts    "</table>"
   end 
   f2.puts "</div> <!-- end day2 -->"
   f2.puts "<div class='clickit'>
@@ -70,18 +87,26 @@ File.open('rc2015.html', 'w') do |f2|
   </div>"
   f2.puts "<div id='day3' style=\"display: none;\">"
   # output detail for Tuesday talks
-  31.upto(40) do |x|
-    f2.puts "<table>
+  31.upto(40) do |x
+    # only output the first four fields for all Breaks
+    if((SPIELS[x][:category]) == "Break")
+      f2.puts "<table>
                <tr><td class='label'>Duration:</td><td>#{SPIELS[x][:duration]}</td></tr>
                <tr><td class='label'>Location:</td><td>#{SPIELS[x][:location]}</td></tr>
                <tr><td class='label'>Category:</td><td>#{SPIELS[x][:category]}</td></tr>
-               <tr><td class='label'>Title:</td><td>#{SPIELS[x][:title]}</td></tr>
-               <tr><td class='label'>Speaker:</td><td>#{SPIELS[x][:speaker]}</td></tr>
+               <tr><td class='label'>Title:</td><td>#{SPIELS[x][:title]}</td><tr>"
+    else
+      f2.puts "<table>
+               <tr><td class='label'>Duration:</td><td>#{SPIELS[x][:duration]}</td></tr>
+               <tr><td class='label'>Location:</td><td>#{SPIELS[x][:location]}</td></tr>
+               <tr><td class='label'>Category:</td><td>#{SPIELS[x][:category]}</td></tr>
+               <tr><td class='label'>Title:</td><td>#{SPIELS[x][:title]}</td><tr>
+               <td class='label'>Speaker:</td><td>#{SPIELS[x][:speaker]}</td></tr>
                <tr><td class='label'>Bio:</td><td>#{SPIELS[x][:bio]}</td></tr>
-               <tr><td class='label'>Details:</td><td>#{SPIELS[x][:details]}</td></tr>
-             </table>"
-  end
-
+               <tr><td class='label'>Details:</td><td>#{SPIELS[x][:details]}</td></tr>"
+    end
+    f2.puts    "</table>"
+  end 
   f2.puts "</div> <!-- end day3 -->"
   f2.puts epilogue
 end
