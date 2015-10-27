@@ -4,7 +4,7 @@ SPIELS = [
   date:     "Sun. Nov. 15, 2015 09:30",
   duration: "9:30 - 10:30",
   location: "Salon CDE",
-  category: "Keynote ",
+  category: "Keynote",
   title:    "Consequences of an Insightful Algorithm",
   speaker:  "Carina C. Zona",
   bio:      "Carina is a developer, advocate, dev evangelist, and educator who is passionate about getting people to examine our many preconceptions that underly everyday programming. She is also the founder of CallbackWomen, and a certified sex educator.",
@@ -106,8 +106,8 @@ SPIELS = [
   category: "",
   title:    "Seven Habits of Highly Effective Gems",
   speaker:  "Mat Brown",
-  bio:      "Mat Brown has been building Ruby applications since 2008, currently at Genius. Mat is the author of Sundaypot, Cequel, and Elastictastic. One of Mat’s colleagues once remarked that he is very handy with Vim.",
-  details:  "These days, publishing a Ruby Gem is incredibly easy—but publishing a good one isn’t. By following a few best practices when you release your code to the open source community, you can make your library stand out from the crowd. We&#39;ll lay out some basic principles, touching on both code design and build tooling, that will have other programmers clamoring to use and contribute to your project, guaranteeing that you will become a code celebrity practically overnight."
+  bio:      "Mat Brown has been building Ruby applications since 2008, currently at Genius. Mat is the author of Sundaypot, Cequel, and Elastictastic. One of Mat&#39;s colleagues once remarked that he is very handy with Vim.",
+  details:  "These days, publishing a Ruby Gem is incredibly easy - but publishing a good one isn&#39;t. By following a few best practices when you release your code to the open source community, you can make your library stand out from the crowd. We&#39;ll lay out some basic principles, touching on both code design and build tooling, that will have other programmers clamoring to use and contribute to your project, guaranteeing that you will become a code celebrity practically overnight."
 },{
   date:     "Sunday Nov. 15, 2015 15:50",
   duration: "15:50 - 16:20",
@@ -139,7 +139,7 @@ SPIELS = [
   date:     "Sunday Nov. 15, 2015 17:15",
   duration: "17:15 - 18:00",
   location: "Salon CDE",
-  category: "Keynote ",
+  category: "Keynote",
   title:    "Stupid Ideas For Many Computers",
   speaker:  "Aja Hammerly",
   bio:      "Aja lives in Seattle where she is a Developer Advocate at Google and a member of the Seattle Ruby Brigade. Her favorite languages are Ruby and Prolog. In her free time she enjoys skiing, cooking, knitting, and long coding sessions on the beach.",
@@ -332,7 +332,7 @@ SPIELS = [
   title:    "Cucumbers Have Layers: A Love Story",
   speaker:  "Sam Livingston-Gray",
   bio:      "A developer from sunny* Portland, Oregon, Sam&#39;s been working in code for long enough to not remember how long it&#39;s been. He likes TDD/BDD/TATFT, pair programming, and refactoring - but finds that long walks on the beach tend to result in sandy keyboards.",
-  details:  "Cucumber sucks. Features are hard to write and constantly break when the UI changes. Step definitions are annoying to create and a freaking nightmare to maintain. And Cucumber suites take for - EVER to run, because you have to wait for a web browser. Except... [almost] none of that is actually true. After years of making awful messes with Cucumber, I finally found a way to use it that worked well, and a project I couldn&#39;t have done without it. I&#39;d like to show you one way to use Cucumber that can be elegant, powerful, expressive, and—believe it or not - fast."
+  details:  "Cucumber sucks. Features are hard to write and constantly break when the UI changes. Step definitions are annoying to create and a freaking nightmare to maintain. And Cucumber suites take for - EVER to run, because you have to wait for a web browser. Except... [almost] none of that is actually true. After years of making awful messes with Cucumber, I finally found a way to use it that worked well, and a project I couldn&#39;t have done without it. I&#39;d like to show you one way to use Cucumber that can be elegant, powerful, expressive, and - believe it or not - fast."
 },{
   date:     "Tuesday Nov. 17, 2015 14:10",
   duration: "14:10 - 14:55",
@@ -355,7 +355,7 @@ SPIELS = [
   date:     "Tuesday Nov. 17, 2015 15:05",
   duration: "15:05 - 16:20",
   location: "Salon CDE",
-  category: "Keynote ",
+  category: "Keynote",
   title:    "Q&A: Matz",
   speaker:  "Yukihiro Matzumoto (Matz)",
   bio:      "",
