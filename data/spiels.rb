@@ -356,7 +356,7 @@ SPIELS = [
   duration: "15:05 - 16:20",
   location: "Salon CDE",
   category: "Keynote",
-  title:    "Q&A: Matz",
+  title:    "Q&amp;A: Matz",
   speaker:  "Yukihiro Matzumoto (Matz)",
   bio:      "",
   details:  "The closing Keynote."
