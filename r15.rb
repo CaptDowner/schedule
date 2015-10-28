@@ -19,8 +19,8 @@ prologue =
 
 # end of html file
 epilogue = 
-  "</body>
-  </html>"
+  "  </body>
+</html>"
 
 File.open('rc2015.html', 'w') do |f2|
   # use "\n" for two lines of text
@@ -50,65 +50,81 @@ File.open('rc2015.html', 'w') do |f2|
          <tr><td class='label'>Location:</td><td>#{SPIELS[x][:location]}</td></tr>
          <tr><td class='label'>Category:</td><td>#{SPIELS[x][:category]}</td></tr>
          <tr><td class='label'>Title:</td><td>#{SPIELS[x][:title]}</td><tr>
-         <td class='label'>Speaker:</td><td>#{SPIELS[x][:speaker]}</td></tr>
+         <tr><td class='label'>Speaker:</td><td>#{SPIELS[x][:speaker]}</td></tr>
          <tr><td class='label'>Bio:</td><td>#{SPIELS[x][:bio]}</td></tr>
          <tr><td class='label'>Details:</td><td>#{SPIELS[x][:details]}</td></tr>"
     end
     f2.puts    "      </table>"
   end 
 
-  f2.puts "</div> <!-- end day1 -->"
-  f2.puts "<div class='clickit'>
-          <span onclick=\"showhide('day2')\"><div id='title'>Monday, Nov. 16th</div></span>
-          </div>"
+  f2.puts "    </div> <!-- end day1 -->"
+  f2.puts "    <div class='clickit'>
+      <span onclick=\"showhide('day2')\"><div id='title'>Monday, Nov. 16th</div></span>
+    </div>"
   f2.puts "<div id='day2' style=\"display: none;\">"
   # output details for Monday talks
   16.upto(30) do |x|
     if((SPIELS[x][:category]) == "Break")
-      f2.puts "            <table>
+      f2.puts "      <table>
          <tr><td class='label'>Time:</td><td>#{SPIELS[x][:duration]}</td></tr>
          <tr><td class='label'>Location:</td><td>#{SPIELS[x][:location]}</td></tr>
          <tr><td class='label'>Category:</td><td>#{SPIELS[x][:category]}</td></tr>
          <tr><td class='label'>Title:</td><td>#{SPIELS[x][:title]}</td><tr>"
     else
-      f2.puts "            <table>
+      f2.puts "      <table>
          <tr><td class='label'>Time:</td><td>#{SPIELS[x][:duration]}</td></tr>
          <tr><td class='label'>Location:</td><td>#{SPIELS[x][:location]}</td></tr>
          <tr><td class='label'>Category:</td><td>#{SPIELS[x][:category]}</td></tr>
          <tr><td class='label'>Title:</td><td>#{SPIELS[x][:title]}</td><tr>
-         <td class='label'>Speaker:</td><td>#{SPIELS[x][:speaker]}</td></tr>
+         <tr><td class='label'>Speaker:</td><td>#{SPIELS[x][:speaker]}</td></tr>
          <tr><td class='label'>Bio:</td><td>#{SPIELS[x][:bio]}</td></tr>
          <tr><td class='label'>Details:</td><td>#{SPIELS[x][:details]}</td></tr>"
     end
-    f2.puts    "            </table>"
+    f2.puts    "      </table>"
   end 
-  f2.puts "</div> <!-- end day2 -->"
-  f2.puts "<div class='clickit'>
-          <span onclick=\"showhide('day3')\"><div id='title'>Tuesday, Nov. 17th</div></span>
-  </div>"
-  f2.puts "<div id='day3' style=\"display: none;\">"
+  f2.puts "    </div> <!-- end day2 -->"
+  f2.puts "    <div class='clickit'>
+      <span onclick=\"showhide('day3')\"><div id='title'>Tuesday, Nov. 17th</div></span>
+    </div>"
+  f2.puts "    <div id='day3' style=\"display: none;\">"
   # output detail for Tuesday talks
   31.upto(40) do |x|
     # only output the first four fields for all Breaks
     if((SPIELS[x][:category]) == "Break")
-      f2.puts "            <table>
-               <tr><td class='label'>Time:</td><td>#{SPIELS[x][:duration]}</td></tr>
-               <tr><td class='label'>Location:</td><td>#{SPIELS[x][:location]}</td></tr>
-               <tr><td class='label'>Category:</td><td>#{SPIELS[x][:category]}</td></tr>
-               <tr><td class='label'>Title:</td><td>#{SPIELS[x][:title]}</td><tr>"
+      f2.puts "      <table>
+        <tr><td class='label'>Time:</td><td>#{SPIELS[x][:duration]}</td></tr>
+        <tr><td class='label'>Location:</td><td>#{SPIELS[x][:location]}</td></tr>
+        <tr><td class='label'>Category:</td><td>#{SPIELS[x][:category]}</td></tr>
+        <tr><td class='label'>Title:</td><td>#{SPIELS[x][:title]}</td><tr>"
     else
-      f2.puts "            <table>
-               <tr><td class='label'>Time:</td><td>#{SPIELS[x][:duration]}</td></tr>
-               <tr><td class='label'>Location:</td><td>#{SPIELS[x][:location]}</td></tr>
-               <tr><td class='label'>Category:</td><td>#{SPIELS[x][:category]}</td></tr>
-               <tr><td class='label'>Title:</td><td>#{SPIELS[x][:title]}</td><tr>
-               <td class='label'>Speaker:</td><td>#{SPIELS[x][:speaker]}</td></tr>
-               <tr><td class='label'>Bio:</td><td>#{SPIELS[x][:bio]}</td></tr>
-               <tr><td class='label'>Details:</td><td>#{SPIELS[x][:details]}</td></tr>"
+      f2.puts "      <table>
+        <tr><td class='label'>Time:</td><td>#{SPIELS[x][:duration]}</td></tr>
+        <tr><td class='label'>Location:</td><td>#{SPIELS[x][:location]}</td></tr>
+        <tr><td class='label'>Category:</td><td>#{SPIELS[x][:category]}</td></tr>
+        <tr><td class='label'>Title:</td><td>#{SPIELS[x][:title]}</td><tr>
+        <tr><td class='label'>Speaker:</td><td>#{SPIELS[x][:speaker]}</td></tr>
+        <tr><td class='label'>Bio:</td><td>#{SPIELS[x][:bio]}</td></tr>
+        <tr><td class='label'>Details:</td><td>#{SPIELS[x][:details]}</td></tr>"
     end
-    f2.puts    "            </table>"
+    f2.puts    "      </table>"
   end 
-  f2.puts "</div> <!-- end day3 -->"
+  f2.puts "    </div> <!-- end day3 -->
+    <br />
+    <center>
+      <div id='cc-by'>
+        <table>
+          <tr>
+            <td><a rel=\"license\" href=\"http:\/\/creativecommons.org\/licenses\/by\/3.0\/us\/\"><img width='60' height='20' alt=\"Creative Commons License\" style=\"border-width:0\" src=\"http://i.creativecommons.org/l/by/3.0/us/88x31.png\" /></a></td>
+          </tr>
+        </table>
+    </center>
+    <center>
+      <p class='commons'>This work is licensed under a <a rel=\"license\" href=\"http:\/\/creativecommons.org\/licenses\/by\/3.0\/us\/\"><font color='white'>Creative Commons Attribution 3.0 United States License</font></a></font>.</p>
+      </div>
+    </center>"
+
+
+
   f2.puts epilogue
 end
 
