@@ -75,7 +75,7 @@ a {
   color: white;
 }
 
-a:hover {
+hr, a:hover {
   color: #d3cb76;
 }
 
