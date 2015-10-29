@@ -269,7 +269,7 @@ SPIELS = [
   title:    "s/regex/DSLs/: What Regex Teaches Us About DSL Design",
   speaker:  "Betsy Haibel",
   bio:      "Betsy Haibel is a senior developer at Optoro, one-half of the Irregular Gentlewomen, and a co-organizer of Learn Ruby in DC.",
-  details:  "Many Ruby domain-specific languages go for beauty over usability - and it shows, when you try to use them. But one of programming&#39;s oldest, most common DSLs - regular expressions - is both as ugly and as persistent as a cockroach. What makes regexes tick? By breaking down their design, we&#39;ll learn concrete principles that go deeper than &quot;Englishy:&quot; principles like &quot;composability&quot; and &quot;deep domain integration.&quot; We&#39;ll learn how to get precise about the API design and boundaries of our DSLs. We&#39;ll write a micro-DSL that is usable without monkeypatching.`"
+  details:  "Many Ruby domain-specific languages go for beauty over usability - and it shows, when you try to use them. But one of programming&#39;s oldest, most common DSLs - regular expressions - is both as ugly and as persistent as a cockroach. What makes regexes tick? By breaking down their design, we&#39;ll learn concrete principles that go deeper than &quot;Englishy:&quot; principles like &quot;composability&quot; and &quot;deep domain integration.&quot; We&#39;ll learn how to get precise about the API design and boundaries of our DSLs. We&#39;ll write a micro-DSL that is usable without monkeypatching."
 },{
   date:     "Monday Nov. 16, 2015 17:15",
   duration: "5:15 - 6:45",
