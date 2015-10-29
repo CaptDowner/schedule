@@ -28,7 +28,7 @@ File.open('rc2015.html', 'w') do |f2|
   # do work here
   f2.puts "    <p>&nbsp;</p>"
   f2.puts "    <center><img src=\"images/rc-boot.jpg\" width=\"138\" height=\"138\">&nbsp;&nbsp;&nbsp;&nbsp;<img src=\"images/rconf-title.png\" width=\"418\" height=\"138\">&nbsp;<img src=\"images/rc-boot.jpg\" width=\"138\" height=\"138\">"
-  f2.puts "    <br />"
+  f2.puts "    <hr />"
   f2.puts "    <h1>Capt. Downer&#39;s Schedule</h1></center>"
   f2.puts "    <h6>(Select a day to view schedule)</h6>"
 
